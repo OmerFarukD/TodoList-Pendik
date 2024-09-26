@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoList.Models
 {
-    public  class Deneme : Entity
+    public  class Deneme : Entity<string>
     {
         private Deneme()
         {

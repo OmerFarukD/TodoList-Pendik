@@ -1,6 +1,6 @@
 ﻿namespace TodoList.Models;
 
-public abstract class Entity
+public abstract class Entity<TId>
 {
-    public int Id { get; set; }
+    public TId Id { get; set; }
 }

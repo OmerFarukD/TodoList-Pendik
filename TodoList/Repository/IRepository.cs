@@ -7,14 +7,14 @@ using TodoList.Models;
 
 namespace TodoList.Repository
 {
-    public interface IRepository<TEntity>
-        where TEntity : Entity, new()
+    public interface IRepository<TEntity,TId>
+        where TEntity : Entity<TId>, new()
     {
         List<TEntity> GetAll();
-        TEntity? GetById(int id);
+        TEntity? GetById(TId id);
 
         TEntity Add(TEntity item);
         TEntity? Update(TEntity item);
-        TEntity? Delete(int id);
+        TEntity? Delete(TId id);
     }
 }

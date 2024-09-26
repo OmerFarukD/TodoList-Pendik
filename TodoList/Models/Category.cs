@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TodoList.Models
 {
-    public sealed class Category : Entity
+    // Kategori tablosunun Id alanı int olsun
+    public sealed class Category : Entity<int>
     {
         public string Name { get; set; }
     }

@@ -1,8 +1,8 @@
 ﻿namespace TodoList.Models;
 
-public class Todo : Entity
+// Todo tablosunun Id alanı Guid olmalı
+public class Todo : Entity<Guid>
 {
-  
     public string Title { get; set; }
     public string Description { get; set; }
     public DateTime CreatedDate { get; set; }

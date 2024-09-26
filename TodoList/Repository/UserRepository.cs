@@ -7,14 +7,14 @@ using TodoList.Models;
 
 namespace TodoList.Repository
 {
-    public sealed class UserRepository :BaseRepository, IUserRepository
+    public sealed class UserRepository : BaseRepository, IUserRepository
     {
         public User Add(User item)
         {
             throw new NotImplementedException();
         }
 
-        public User? Delete(int id)
+        public User? Delete(long id)
         {
             throw new NotImplementedException();
         }
@@ -24,7 +24,7 @@ namespace TodoList.Repository
             throw new NotImplementedException();
         }
 
-        public User? GetById(int id)
+        public User? GetById(long id)
         {
             throw new NotImplementedException();
         }

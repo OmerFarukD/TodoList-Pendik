@@ -7,18 +7,17 @@ public sealed class TodoRepository : BaseRepository, ITodoRepository
 {
     public Todo Add(Todo item)
     {
-        Todos().Add(item);
-        return item;
+        throw new NotImplementedException();
     }
 
-    public Todo? Delete(int id)
+    public Todo? Delete(Guid id)
     {
         throw new NotImplementedException();
     }
 
     public List<Todo> GetAll()
     {
-        return Todos();
+        throw new NotImplementedException();
     }
 
     public List<Todo> GetAllByTitleContains(string title)
@@ -26,7 +25,7 @@ public sealed class TodoRepository : BaseRepository, ITodoRepository
         throw new NotImplementedException();
     }
 
-    public Todo? GetById(int id)
+    public Todo? GetById(Guid id)
     {
         throw new NotImplementedException();
     }

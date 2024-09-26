@@ -1,6 +1,6 @@
 ﻿namespace TodoList.Models;
 
-public class User :Entity
+public class User :Entity<long>
 {
 
     public string Name { get; set; }
